@@ -36,7 +36,7 @@ export default async function Page({
   ]);
 
   return (
-    <main className="p-6 space-y-5">
+    <main className="p-4 md:p-6 space-y-5">
       <FilterBar
         options={options}
         current={{

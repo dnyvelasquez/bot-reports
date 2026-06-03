@@ -20,8 +20,8 @@ interface Props {
 }
 
 const SELECT_CLS =
-  'bg-[#001D35] border border-[#26CFD8]/30 text-white rounded-lg px-3 py-2 text-sm ' +
-  'focus:outline-none focus:border-[#26CFD8] min-w-[130px]';
+  'w-full bg-[#001D35] border border-[#26CFD8]/30 text-white rounded-lg px-3 py-2 text-sm ' +
+  'focus:outline-none focus:border-[#26CFD8]';
 
 const LABEL_CLS = 'text-xs text-[#26CFD8] font-medium uppercase tracking-wider';
 
@@ -58,7 +58,7 @@ export default function FilterBar({ options, current }: Props) {
 
   return (
     <div className="bg-[#0A2844] rounded-xl p-4 border border-[#26CFD8]/20">
-      <div className="flex flex-wrap gap-4 items-end">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:flex md:flex-wrap gap-3 md:gap-4 items-end">
 
         {/* Period toggle */}
         <div className="space-y-1.5">
